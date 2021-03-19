@@ -48,7 +48,7 @@ public class LoginController {
 		return new Admin();
 	}
 	
-	@GetMapping("/home")
+	@GetMapping("/")
 	public String home(Model model) {
 		org.springframework.security.core.Authentication auth=SecurityContextHolder.getContext().getAuthentication();
 		User user=userService.getUserByEmail(auth.getName());

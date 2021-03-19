@@ -159,7 +159,7 @@ public class CourseController {
 				courseService.courseRegisterByStudent(student, course);
 			}
 		}
-		return "redirect:/home";
+		return "redirect:/";
 	}
 	
 	@GetMapping("/unregister")
@@ -185,7 +185,7 @@ public class CourseController {
 				courseService.courseUnRegisterByStudent(student, course);
 			}
 		}
-		return "redirect:/home";
+		return "redirect:/";
 	}
 	
 	@GetMapping("/registeredcourses")
